@@ -7,7 +7,7 @@ public class MellieWageCalculator {
 	}
 
 	public Object calculatePay() {
-		Object potentialPay = 12;
+		int potentialPay = 12;
 		//$12 hour * 5 hours worked
 		potentialPay = 12*5;
 		// TODO Auto-generated method stub

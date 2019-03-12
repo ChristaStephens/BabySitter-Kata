@@ -15,10 +15,19 @@ public class DaysWorked {
 	
 	//Start with calc time for 1 hour of work
 	@Test
-	public void calculatepayforworkafterstarttime() {
+	public void calculatepayforworkafterstarttimeat12hourly() {
 		//5 is hours worked if start at 5 pm til 10p
 		MellieWageCalculator potentialPay = new MellieWageCalculator(5); 
+		//assert equals gives -> (expected, actual)
 		assertEquals(60, potentialPay.calculatePay());
+	}
+	
+	@Test
+	public void calculatepayforworkafter10pmat8hourly() {
+		//2 hours worked if start at 10pm til 12 pm
+		MellieWageCalculator potentialPay = new MellieWageCalculator(2);
+		assertEquals(16, potentialPay.calculatePay());
+		
 	}
 
 }
