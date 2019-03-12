@@ -8,7 +8,7 @@ public class MellieWageCalculator {
 
 	public Object calculatePay() {
 		// TODO Auto-generated method stub
-		return null;
+		return 12;
 	}
 
 }
