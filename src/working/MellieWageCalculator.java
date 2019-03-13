@@ -7,11 +7,21 @@ public class MellieWageCalculator {
 	}
 
 	public Object calculatePay() {
-		int potentialPay = 12;
+		int potentialPayBefore10 = 12;
+		int potentialPayAfter10 = 8;
+		
 		//$12 hour * 5 hours worked
-		potentialPay = 12*5;
+		potentialPayBefore10 = 12*5;
+		potentialPayAfter10 = 8*2;
+		
+		int totalPayAfter10 = potentialPayAfter10;
 		// TODO Auto-generated method stub
-		return potentialPay ;
+		
+		if (potentialPayBefore10 != potentialPayAfter10) {
+			return totalPayAfter10;
+		}
+		
+		return potentialPayBefore10;
 	}
 
 }
