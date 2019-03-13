@@ -31,5 +31,12 @@ public class DaysWorked {
 		assertEquals(16, potentialPay.calculatePay());
 
 	}
+	
+	@Test
+	public void calculatepayforworkafter12amat16hourly() {
+		// 4 hours worked if start at 12am til 4am
+		MellieWageCalculator potentialPay = new MellieWageCalculator(4);
+		assertEquals(64, potentialPay.calculatePay());
+	}
 
 }
