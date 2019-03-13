@@ -12,6 +12,7 @@ public class DaysWorked {
 	 */
 
 	// Project Goal: Create test to show Mellie being paid
+	//next test- total for family B
 
 	// Start with calc time for 1 hour of work
 	@Test
