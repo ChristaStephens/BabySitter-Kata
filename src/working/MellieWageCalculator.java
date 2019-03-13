@@ -3,9 +3,9 @@ package working;
 public class MellieWageCalculator {
 	
 	private int hoursWorked= 0;
-	public MellieWageCalculator(int i) {
+	public MellieWageCalculator(int hoursWorked) {
 	    // TODO Auto-generated constructor stub
-	    this.hoursWorked= i;
+	    this.hoursWorked= hoursWorked;
 	}
 
 	public Object calculatePay() {
