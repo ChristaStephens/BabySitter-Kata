@@ -29,7 +29,7 @@ public class MellieWageCalculator {
 		if (hoursWorked != 5) {
 			return payAfter10;
 		}
-		if (hoursWorked < 5) {
+		else if (hoursWorked < 5) {
 			return payAfter12;
 		} else
 			return payBefore10;
